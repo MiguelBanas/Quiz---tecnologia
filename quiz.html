@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Tecnologia</title>
+    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="perguntas()">
+    <div id="cabecalho">Teste seus conhecimentos sobre tecnologia</div>
+    <div id="cabecalho2">Quiz</div>
+    <div id="res" class="container-fluid">
+      <button class="btn btn-warning" onclick="limpar() ">Recomeçar</button>
+      <div id="perguntas">
+        <div id="pergunta1">
+          <h4>Pergunta 1:</h4>
+          <p>A sigla LGPD significa "Lei Geral de Proteção de Dados"</p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro1"
+              onclick="pergunta1(1)"
+              class="btn btn-secondary"
+            />
+            <input
+              type="button"
+              value="Falso"
+              id="falso1"
+              class="btn btn-secondary"
+              onclick="pergunta1(0)"
+            />
+          </p>
+          <div id="res1" class="resposta"></div>
+        </div>
+        <div id="pergunta2">
+          <h4>Pergunta 2:</h4>
+          <p>
+            Os aplicativos de mensagens não usam criptografia de ponta a ponta
+          </p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro2"
+              onclick="pergunta2(1) "
+              class="btn btn-secondary"
+            />
+            <input
+              type="button"
+              value="Falso"
+              class="btn btn-secondary"
+              id="falso2"
+              onclick="pergunta2(0)"
+            />
+          </p>
+          <div id="res2" class="resposta"></div>
+        </div>
+        <div id="pergunta3">
+          <h4>Pergunta 3:</h4>
+          <p>É possível financiar um projeto com a ajuda de tecnologia?</p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro3"
+              onclick="pergunta3(1)"
+              class="btn btn-secondary"
+            />
+            <input
+              type="button"
+              value="Falso"
+              id="falso3"
+              class="btn btn-secondary"
+              onclick="pergunta3(0)"
+            />
+          </p>
+          <div id="res3" class="resposta"></div>
+        </div>
+        <div id="pergunta4">
+          <h4>Pergunta 4:</h4>
+          <p>
+            Todos os smartphones precisam ter a bateria carregada via cabo USB
+          </p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro4"
+              class="btn btn-secondary"
+              onclick="pergunta4(1)"
+            />
+            <input
+              type="button"
+              value="Falso"
+              class="btn btn-secondary"
+              id="falso4"
+              onclick="pergunta4(0)"
+            />
+          </p>
+          <div id="res4" class="resposta"></div>
+        </div>
+        <div id="pergunta5">
+          <h4>Pergunta 5:</h4>
+          <p>
+            Os assistentes inteligentes nos smartphones não possuem funções que
+            respondem ao comando de voz
+          </p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro5"
+              class="btn btn-secondary"
+              onclick="pergunta5(1)"
+            />
+            <input
+              type="button"
+              value="Falso"
+              id="falso5"
+              class="btn btn-secondary"
+              onclick="pergunta5(0)"
+            />
+          </p>
+          <div id="res5" class="resposta"></div>
+        </div>
+        <div id="pergunta6">
+          <h4>Pergunta 6:</h4>
+          <p>
+            É possível receber dinheiro de volta fazendo compras em e-commerce?
+          </p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro6"
+              class="btn btn-secondary"
+              onclick="pergunta6(1)"
+            />
+            <input
+              type="button"
+              value="Falso"
+              class="btn btn-secondary"
+              id="falso6"
+              onclick="pergunta6(0)"
+            />
+          </p>
+          <div id="res6" class="resposta"></div>
+        </div>
+        <div id="pergunta7">
+          <h4>Pergunta 7:</h4>
+          <p>
+            Brinquedos também podem ter funções de conectividade e acesso à
+            internet
+          </p>
+          <p>
+            <input
+              type="button"
+              value="Verdadeiro"
+              id="verdadeiro7"
+              class="btn btn-secondary"
+              onclick="pergunta7(1)"
+            />
+            <input
+              type="button"
+              value="Falso"
+              id="falso7"
+              class="btn btn-secondary"
+              onclick="pergunta7(0)"
+            />
+          </p>
+          <div id="res7" class="resposta"></div>
+        </div>
+        <div id="resposta" class="resposta"></div>
+
+        <footer id="rodape">Desenvolvido por Miguel Banas</footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
